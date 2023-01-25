@@ -4,10 +4,8 @@ using namespace std;
 
 int main()
 { 
-    int x=2;
-    int y=3;
-    clsUtil::swap(x,y);
-    cout<<"x "<<x<<" "<<"y "<<y<<endl;
+    srand (time(NULL));
+    cout<<clsUtil::generate_random_number(10,90)<<endl;
     system("pause");
     return 0;
 }
