@@ -34,4 +34,10 @@ public:
         }
         return alphabet[random_position-1];
     }
+    static char generate_random_upper_character()
+    {
+        char letter=generate_random_lower_character();
+        letter-=32;
+        return letter;
+    }
 };
