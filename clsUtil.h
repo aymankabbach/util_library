@@ -24,4 +24,14 @@ public:
         }
         return random_number;
     }
+    static char generate_random_lower_character()
+    {
+        vector <char> alphabet={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+        short random_position=rand()%alphabet.size();
+        while (random_position<=0)
+        {
+            random_position=rand()%alphabet.size();
+        }
+        return alphabet[random_position-1];
+    }
 };
