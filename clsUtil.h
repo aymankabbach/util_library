@@ -43,14 +43,21 @@ public:
     static string generate_random_key()
     {
         string key;
-        for (short x=0 ; x<13; x++)
+        for (short x=0 ; x<12; x++)
         {
             key+=generate_random_upper_character();
-            if (x==4 || x==8)
+            if (x==3 || x==7)
             {
                 key+="-";
             }
         }
         return key;
+    }
+    static void generate_random_keys(short times)
+    {
+        for (short x=0;x<times ;x++)
+        {
+            cout<<generate_random_key()<<endl;
+        }
     }
 };

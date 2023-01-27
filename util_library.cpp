@@ -5,8 +5,7 @@ using namespace std;
 int main()
 { 
     srand (time(NULL));
-    cout<<clsUtil::generate_random_upper_character()<<endl;
-    cout<<clsUtil::generate_random_key()<<endl;
+    clsUtil::generate_random_keys(10);
     system("pause");
     return 0;
 }
