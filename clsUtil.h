@@ -40,4 +40,17 @@ public:
         letter-=32;
         return letter;
     }
+    static string generate_random_key()
+    {
+        string key;
+        for (short x=0 ; x<13; x++)
+        {
+            key+=generate_random_upper_character();
+            if (x==4 || x==8)
+            {
+                key+="-";
+            }
+        }
+        return key;
+    }
 };
